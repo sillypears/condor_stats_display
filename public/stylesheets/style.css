@@ -18,3 +18,11 @@ a {
 .content {
   padding: 10px;
 }
+
+.left-player {
+  padding-left: 50px;
+}
+
+.right-player {
+  padding-right: 50px;
+}

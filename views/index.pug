@@ -3,56 +3,60 @@ extends layout
 block content
   .content.border.border-white.rounded
     .row.title
-      .col.col-md-5.text-left.h1= player1
-      .col.col-md-2.text-center.h1 vs
-      .col.col-md-5.text-right.h1= player2
+      .col.col-md-4.text-center.h1.left-player= player1
+      .col.col-md-4.text-center.h1 vs
+      .col.col-md-4.text-center.h1.right-player= player2
     .row.seasons
-      .col.col-md-12.text-center  Current Season
+      .col.col-md-12.text-center.h2  Current Season
     .row.last-season
-      .col.col-md-4.current-season-left
+      .col.col-md-3.current-season-left
         .row.last-3-wins-1
-          .col.text-right 1:
-          .col.text-left= data.p1.cseason.win1
+          .col.text-right.h3 1:
+          .col.text-left.h3= data.p1.cseason.win1
         .row.last-3-wins-2
-          .col.text-right 2:
-          .col.text-left= data.p1.cseason.win2
+          .col.text-right.h3 2:
+          .col.text-left.h3= data.p1.cseason.win2
         .row.last-3-wins-3
-          .col.text-right 3:
-          .col.text-left= data.p1.cseason.win3
-      .col-md-4
-      .col-md-4.current-season-right
+          .col.text-right.h3 3:
+          .col.text-left.h3= data.p1.cseason.win3
+      .col-md-6
+      .col-md-3.current-season-right
         .row.last-3-wins-1
-          .col.text-right 1:
-          .col.text-left= data.p2.cseason.win1
+          .col.text-right.h3 1:
+          .col.text-left.h3= data.p2.cseason.win1
         .row.last-3-wins-2
-          .col.text-right 2:
-          .col.text-left= data.p2.cseason.win2
+          .col.text-right.h3 2:
+          .col.text-left.h3= data.p2.cseason.win2
         .row.last-3-wins-3
-          .col.text-right 3:
-          .col.text-left= data.p2.cseason.win3
+          .col.text-right.h3 3:
+          .col.text-left.h3= data.p2.cseason.win3
     .row.season
-      .col.cod-md-12.text-center Last Season
+      .col.cod-md-12.text-center.h2 Last Season
     .row.last-season
-      .col.col-md-4.current-season-left
+      .col.col-md-3.current-season-left
         .row.last-3-wins-1
-          .col.text-right 1:
-          .col.text-left= data.p1.lseason.win1
+          .col.text-right.h3 1:
+          .col.text-left.h3= data.p1.lseason.win1
         .row.last-3-wins-2
-          .col.text-right 2:
-          .col.text-left= data.p1.lseason.win2
+          .col.text-right.h3 2:
+          .col.text-left.h3= data.p1.lseason.win2
         .row.last-3-wins-3
-          .col.text-right 3:
-          .col.text-left= data.p1.lseason.win3
-      .col-md-4
-      .col-md-4.current-season-right
+          .col.text-right.h3 3:
+          .col.text-left.h3= data.p1.lseason.win3
+      .col-md-6
+      .col-md-3.current-season-right
         .row.last-3-wins-1
-          .col.text-right 1:
-          .col.text-left= data.p2.lseason.win1
+          .col.text-right.h3 1:
+          .col.text-left.h3= data.p2.lseason.win1
         .row.last-3-wins-2
-          .col.text-right 2:
-          .col.text-left= data.p2.lseason.win2
+          .col.text-right.h3 2:
+          .col.text-left.h3= data.p2.lseason.win2
         .row.last-3-wins-3
-          .col.text-right 3:
-          .col.text-left= data.p2.lseason.win3
+          .col.text-right.h3 3:
+          .col.text-left.h3= data.p2.lseason.win3
     .row.general
-      .col-md-4.pbs
+      .col-md-12.pbs.text-center.h2.font-weight-underline PBs
+    .row.pbs
+      .col-md-3.pb-player-left.text-center.h3= data.p1.pb
+      .col-md-6
+      .col-md-3.pb-player-right.text-center.h3= data.p2.pb

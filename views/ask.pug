@@ -1,0 +1,7 @@
+extends layout
+
+block content
+    form(action="", method="GET")
+        input.input(type="text", validation=true, name="p1", placeholder="Player 1")
+        input.input(type="text", validation=true, name="p2", placeholder="Player 2")
+        input.btn(type="submit", value="submit", name="submit")
