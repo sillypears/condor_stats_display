@@ -1,0 +1,20 @@
+body {
+  padding: 50px;
+  font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
+  font-family: 'NecroSans';
+  background-color: grey;
+}
+
+a {
+  color: #00B7FF;
+}
+
+@font-face {
+  font-family: 'NecroSans';
+  src: url('/fonts/necrosans.ttf') format('truetype'),
+       url('/fonts/necrosans.woff') format('woff'); 
+}
+
+.content {
+  padding: 10px;
+}
